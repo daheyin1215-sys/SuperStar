@@ -27,4 +27,4 @@ jobs:
           CHAOIXING_USERNAME: ${{ secrets.CHAOXING_USERNAME }}
           CHAOIXING_PASSWORD: ${{ secrets.CHAOXING_PASSWORD }}
           CHAOIXING_COURSE_LIST: ${{ secrets.CHAOXING_COURSE_LIST }}
-        run: python main.py -u "\( {17311328007}" -p " \){lwh070909}" -l "${261044256}"
+        run: python main.py -u "\( {CHAOIXING_USERNAME}" -p " \){CHAOIXING_PASSWORD}" -l "${CHAOIXING_COURSE_LIST}"
